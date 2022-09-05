@@ -12,7 +12,7 @@
 <p>Linguagem Java(JDK 17) com o Spring Boot(2.7.2)</p>
 <p>Authentication e JWT</p> 
 <p>Banco de dados Relacional MySql </p>
-<p>Utilização do Redis para Cache de dados(Cache desabilitar, para habilitar descomentar código @EnableCahing no ServicosApplication</p>
+<p>Utilização do Redis para Cache de dados(Cache desabilitado, para habilitar descomentar código @EnableCahing no ServicosApplication</p>
 <hr>
 <h2>Documentação dos Endpoints no Postman</h2>
 <p>Postman: https://documenter.getpostman.com/view/20402262/UzXNUxBm</p>
