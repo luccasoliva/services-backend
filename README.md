@@ -12,9 +12,11 @@
 <p>Linguagem Java(JDK 17) com o Spring Boot(2.7.2)</p>
 <p>Authentication e JWT</p> 
 <p>Banco de dados Relacional MySql </p>
-<p>Utilização do Redis para Cache de dados(Cache desabilitado, para habilitar descomentar código @EnableCahing no ServicosApplication</p>
+<p>Utilização do Redis para Cache de dados</p>
+<h3>Para iniciar o MySQL e Redis, Run no arquivo docker-compose.yml</h3>
 <hr>
 <h2>Documentação dos Endpoints no Postman</h2>
 <p>Postman: https://documenter.getpostman.com/view/20402262/UzXNUxBm</p>
 <h2>Login e Senha de um usuário com a role de ADMIN, para testes.</h2>
-<p>Login: teste@gmail.com | Senha: 123</p>
+<p>Login: teste@gmail.com | Senha: teste</p>
+<p>Frontend: https://github.com/luccasoliva/services-frontend</p>
