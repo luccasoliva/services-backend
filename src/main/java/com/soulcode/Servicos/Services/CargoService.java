@@ -11,6 +11,7 @@ import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.redis.cache.RedisCacheManager;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 import java.util.Optional;
 
@@ -51,5 +52,19 @@ public class CargoService {
     public void excluirCargo(Integer idCargo){
 
         cargoRepository.deleteById(idCargo);
+    }
+
+    @PostConstruct
+    public void createCargo(){
+        Cargo cargo = new Cargo();
+        cargo.setNome("Gerente");
+        cargo.setDescricao("Gerente de TI");
+
+        Cargo cargo2 = new Cargo();
+        cargo2.setNome("Analista");
+        cargo2.setDescricao("Analista de TI");
+
+        cargoRepository.save(cargo);
+        cargoRepository.save(cargo2);
     }
 }

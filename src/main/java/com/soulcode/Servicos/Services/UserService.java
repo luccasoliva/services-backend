@@ -3,8 +3,10 @@ package com.soulcode.Servicos.Services;
 import com.soulcode.Servicos.Models.User;
 import com.soulcode.Servicos.Repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
 import java.util.List;
 
 @Service
@@ -30,5 +32,13 @@ public class UserService {
         return userRepository.save(user);
     }
 
+    @PostConstruct
+    public User createUser() {
+    	User user = new User();
+    	user.setLogin("teste@gmail.com");
+    	user.setPassword(new BCryptPasswordEncoder().encode("teste"));
+    	user.setEnabled(true);
+    	return userRepository.save(user);
+    }
 
 }

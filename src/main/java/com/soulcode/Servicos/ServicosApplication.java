@@ -9,9 +9,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 
 //@EnableCaching
 @SpringBootApplication
+@EnableCaching
 public class ServicosApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ServicosApplication.class, args);
+
+
+
 	}
 }

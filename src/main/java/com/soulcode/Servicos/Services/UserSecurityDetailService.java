@@ -25,4 +25,6 @@ public class UserSecurityDetailService implements UserDetailsService {
 
         return new UserSecurityDetail(user.get().getLogin(), user.get().getPassword(),user.get().isEnabled());
     }
+
+
 }
